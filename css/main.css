@@ -13,7 +13,7 @@ body {
 }
 
 .ryu {
-	float: left;/* this part does not belong here*/
+	float: left;//* this part does not belong here*/
 	width: 659px;
 	height: 494px;
 }
@@ -42,7 +42,7 @@ body {
 .ryu-cool {
 	background-image: url('../images/ryu-cool.gif');
 }
-.hadouken, .ryu-still, .ryu-ready, .ryu-throwing {
+.hadouken, .ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -58,4 +58,19 @@ body {
 	left: 520px;
 }
 
+.text > p {
+	padding-top: 2em;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	text-align: center;
+	padding-right: 3em;
+	
+	padding-left: 15em;
+	width: 50%;
+
+}
+
+p:nth-child(2) {
+	padding-top: 3em;
+}
 
