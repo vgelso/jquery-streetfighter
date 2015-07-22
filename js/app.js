@@ -26,23 +26,30 @@ $(document).ready(function() {
 
   $(document).keydown(function(e) {
   	if (e.which === 88) {
-      $('#cool-sound')[0].play();
+      playSound();
 		  $('.ryu div').hide();
   		$('.ryu-cool').show();
-  	}
+    }
   })
 	.keyup(function(e) {
 		if (e.which === 88) {
-      $('#cool-sound')[0].pause();
-      $('#cool-sound')[0].currentTime = 0;
+      stopSound();
 		  $('.ryu-cool').hide();
   		$('.ryu-ready').show();
 		}
 	})
-
 });
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
+}
+
+function playSound() {
+  $('#cool-sound')[0].play();
+}
+
+function stopSound() {
+  $('#cool-sound')[0].pause();
+  $('#cool-sound')[0].currentTime = 0;
 }
